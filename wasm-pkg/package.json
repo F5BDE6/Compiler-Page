@@ -1,0 +1,15 @@
+{
+  "name": "wasm-repl",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "wasm_repl_bg.wasm",
+    "wasm_repl.js",
+    "wasm_repl.d.ts"
+  ],
+  "main": "wasm_repl.js",
+  "types": "wasm_repl.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

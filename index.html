@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<script type="module">
+    import init, {run_code} from './wasm-pkg/wasm_repl.js';
+
+    async function run() {
+        await init();
+        window.run_code = run_code;
+    }
+
+    run();
+</script>
+<label>
+    <textarea cols="40" name="code" rows="5"></textarea>
+</label>
+<input name="run" onclick="run_code()" type="button" value="Run"/>
+</body>
+</html>
